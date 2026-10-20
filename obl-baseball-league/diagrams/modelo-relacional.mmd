@@ -1,0 +1,12 @@
+erDiagram
+    SALES_REPRESENTATIVES ||--o{ TEAMS : represents
+    SALES_REPRESENTATIVES ||--o{ CUSTOMERS : assists
+    TEAMS ||--o{ CUSTOMERS : associated_with
+    CUSTOMERS ||--o{ CUSTOMERS_ADDRESSES : has
+    SALES_REPRESENTATIVES ||--o{ SALES_REPRESENTATIVES_ADDRESS : has
+    CUSTOMERS ||--o{ ORDERS : places
+    ORDERS ||--o{ ORDERED_ITEMS : contains
+    ITEMS ||--o{ ORDERED_ITEMS : included_in
+    INVENTORY_LIST ||--o{ ITEMS : stocks
+    ITEMS ||--o{ PRICE_HISTORY : priced_by
+    SALES_REPRESENTATIVES o|--o{ SALES_REPRESENTATIVES : supervises
